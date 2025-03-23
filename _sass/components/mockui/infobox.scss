@@ -1,0 +1,24 @@
+.mock-infobox {
+    display: flex;
+    border-top: black 0.5952380952380952cqh solid;
+    border-bottom: black 0.5952380952380952cqh solid;
+    margin: 1.785714285714286cqh 0;
+    padding-right: 2.083333333333333cqw;
+    .mock-infobox-icon {
+        &.red {
+            background-color: #E35462;
+        }
+
+        margin-right: 2.083333333333333cqw;
+        padding-left: 1.388888888888889cqw;
+        padding-right: 1.388888888888889cqw;
+
+        svg {
+            width: 12.5cqw;
+        }
+    }
+
+    .mock-infobox-text {
+        padding: 3.571428571428571cqh 0;
+    }
+}

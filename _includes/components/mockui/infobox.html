@@ -1,0 +1,11 @@
+<div class="mock-infobox">
+    {% capture icon %}
+    {% include icons/{{ include.icon }} %}
+    {% endcapture %}
+    <div class="mock-infobox-icon {{ include.color }}">
+        {{ icon }}
+    </div>
+    <div class="gothic-24 mock-infobox-text">
+        {{ include.text }}
+    </div>
+</div>

@@ -41,8 +41,15 @@ layout: home
                 <div>
                     <p class="gothic-14 center status-bar-time">14:22</p>
                     <div class="body">
-                        <p class="gothic-14 bold">Bobby</p>
-                        <p class="gothic-24 bold">I'm doing thanks How help you</p>
+                        <div class="container">
+                            <p class="gothic-14 bold">Bobby</p>
+                            <p class="gothic-24 bold">I'm doing thanks How help you</p>
+                        </div>
+                        {% include components/mockui/infobox.html
+                            icon = "skull.svg"
+                            color = "red"
+                            text = "Bobby did not, in fact, set a reminder, set an alarm, or set a timer."
+                        %}
                     </div>
                 </div>
                 {% endcapture %}
