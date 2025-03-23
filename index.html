@@ -39,10 +39,12 @@ layout: home
             <div class="pebbles-container">
                 {% capture screencontent %}
                 <div>
-                    <p style="font-size: 0.7rem; color: #d1d5db;">14:22</p>
-                    <p style="font-size: 0.9rem; font-weight: 600; color: white;">How can I help?</p>
-                    <p style="font-size: 0.7rem; color: #d1d5db;">"What's the weather?"</p>
-                    {/* Add more mock UI here */}
+                    <p class="gothic-14 center">14:22</p>
+                    <hr class="dotted"/>
+                    <div class="body">
+                        <p class="gothic-14 bold">Bobby</p>
+                        <p class="gothic-24 bold">I'm doing thanks How help you</p>
+                    </div>
                 </div>
                 {% endcapture %}
                 {% include components/pebble-frame.html
