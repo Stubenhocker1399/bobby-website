@@ -47,6 +47,14 @@
         background: #ffffff;
         height: 100%;
         overflow: hidden;
+        overflow-y: scroll;
+        -ms-overflow-style: none;  /* Internet Explorer 10+ */
+        scrollbar-width: none;  /* Firefox */
+
+        &::-webkit-scrollbar { 
+            display: none;  /* Safari and Chrome */
+        }
+
         font-size: 16cqw;
         font-family: "Oswald", sans-serif;
         font-weight: 300;
