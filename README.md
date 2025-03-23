@@ -14,4 +14,5 @@ Website for https://github.com/pebble-dev/bobby-assistant
 ## Building
 
 - `bundle exec jekyll serve`
+    - optionally use `bundle exec jekyll serve --livereload` for live reloading
 - Browse to [http://localhost:4000](http://localhost:4000)
