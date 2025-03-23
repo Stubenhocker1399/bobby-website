@@ -34,8 +34,8 @@ description: >- # this means to ignore newlines until "baseurl:"
   - ...and more!
 
   Using Bobby requires a Rebble subscription.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/bobby-website/" # the subpath of your site, e.g. /blog
+url: "https://stubenhocker1399.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 store_url: https://apps.rebble.io/en_US/application/67c3afe7d2acb30009a3c7c2
 
 # Build settings
