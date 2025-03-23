@@ -1,9 +1,13 @@
 <header class="wrapper">
-    <h1>Bobby</h1>
-    <p>The most well-read pony on the platform.</p>
+    <div class="header-block">
+    <div>
+      <p class="lead">The most well-read pony on the platform</p>
+      <h1>Bobby</h1>
+      <p class="lead">Rebble AI Assistant</p>
 
-    {% if page.layout == 'home' %}
-    <a href="{{ site.store_url }}" class="button">Download Bobby</a>
-    {% endif %}
-    <!-- TODO: add a nice bobby image here-->
+      <a href="{{ site.store_url }}" class="button">Get Bobby</a>
+      <p>Requires a Rebble Subscription</p>
+    </div>
+    {% include big-bobby.svg %}
+    </div>
 </header>

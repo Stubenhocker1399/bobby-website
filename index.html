@@ -19,23 +19,22 @@ layout: home
     </div>
 </section>
 
-<section class="how-it-works-section">
+<section class="section">
     <div class="wrapper">
-        <h2>How It Works</h2>
-        <div class="how-it-works-content">
-            <div class="how-it-works-text-content">
-                <h3>Seamless Integration with Pebble</h3>
+        <div class="section-content">
+            <div class="section-text-content">
+                <h3>Built by Rebble</h3>
                 <p>
-                    Bobby seamlessly integrates with your Pebble Smartwatch, providing
-                    a natural and intuitive way to interact with your device.  It
-                    enhances your Pebble experience.
+                    Bobby is added to your Rebble Subscription, extracting
+                    more value from what you already paid for. If you
+                    don't have a Rebble subscription yet, <a target="_blank" href="https://auth.rebble.io/account/">it's only $3 a month</a>.
                 </p>
-                <ul>
-                    <li>Install the Bobby app from the Pebble app store.</li>
-                    <li>Connect Bobby to your phone.</li>
-                    <li>Start using voice commands and smart features on your Pebble.</li>
-                </ul>
             </div>
+            <div class="pebbles-container">
+            {% include rebble_logo.svg %}
+            </div>
+        </div>
+        <div class="section-content">
             <div class="pebbles-container">
                 {% capture screencontent %}
                 <div>
@@ -61,6 +60,31 @@ layout: home
                     content = screencontent
                     frame = "pebble-time"
                 %}
+            </div>
+            <div class="section-text-content">
+                <h3>Quick and Easy to Use</h3>
+                <p>
+                    Bobby enhances your Pebble smartwatch experience by
+                    enabling you to accomplish more tasks swiftly.
+                    Setting reminders, alarms, and timers becomes
+                    effortless, and you can now access essential
+                    information directly on your watch.
+                </p>
+            </div>
+        </div>
+        <div class="section-content">
+            <div class="section-text-content">
+                <h3>Privacy Respecting</h3>
+                <p>
+                    Bobby doesn't store any data long term, and the
+                    content of your requests isn't used for further AI training.
+                </p>
+            </div>
+            <div class="section-text-content">
+                <h3>Open Source</h3>
+                <p>
+                    The Pebble app is fully open source and hosted on GitHub. 
+                </p>
             </div>
         </div>
     </div>
