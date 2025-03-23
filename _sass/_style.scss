@@ -75,6 +75,14 @@ header {
 @import "components/feature-card.scss";
 @import "components/pebble-frame.scss";
 
+.status-bar-time {
+    text-align: center;
+    width: 100%;
+    border-bottom: black 1px solid;
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+}
 
 .how-it-works-section {
     padding: 80px 0;
