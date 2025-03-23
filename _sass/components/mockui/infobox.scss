@@ -1,24 +1,26 @@
+@import "./../../utils";
+
 .mock-infobox {
     display: flex;
-    border-top: black 0.5952380952380952cqh solid;
-    border-bottom: black 0.5952380952380952cqh solid;
-    margin: 1.785714285714286cqh 0;
-    padding-right: 2.083333333333333cqw;
+    border-top: black pebbleH(1) solid;
+    border-bottom: black pebbleH(1) solid;
+    margin: pebbleH(3) 0;
+    padding-right: pebbleW(3);
     .mock-infobox-icon {
         &.red {
             background-color: #E35462;
         }
 
-        margin-right: 2.083333333333333cqw;
-        padding-left: 1.388888888888889cqw;
-        padding-right: 1.388888888888889cqw;
+        margin-right: pebbleW(3);
+        padding-left: pebbleW(2);
+        padding-right: pebbleW(2);
 
         svg {
-            width: 12.5cqw;
+            width: pebbleW(18);
         }
     }
 
     .mock-infobox-text {
-        padding: 3.571428571428571cqh 0;
+        padding: pebbleH(6) 0;
     }
 }

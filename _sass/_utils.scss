@@ -1,0 +1,7 @@
+@function pebbleW($pixel) { // assumes screen width of 144;
+    @return $pixel/144*100cqw;
+}
+
+@function pebbleH($pixel) { // assumes screen width of 168;
+    @return $pixel/168*100cqh;
+}
