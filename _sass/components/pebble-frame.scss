@@ -1,7 +1,7 @@
 .pebble-frame {
     position: relative;
     aspect-ratio: 571/973;
-    width: 170px;
+    width: 270px;
     max-width: 80vw;
 
     &::before {
@@ -30,14 +30,14 @@
     }
 
     &.pebble-2 .pebble-screen {
-        padding-top: 57%;
+        padding-top: 57.4%;
         padding-bottom: 57%;
         padding-left: 24.6%;
         padding-right: 24.5%;
     }
 
     &.pebble-time .pebble-screen {
-        padding-top: 54%;
+        padding-top: 54.4%;
         padding-bottom: 54%;
         padding-left: 23.5%;
         padding-right: 23%;
