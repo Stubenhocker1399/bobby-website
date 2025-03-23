@@ -1,0 +1,23 @@
+- title: Timers & Reminders
+  icon: timer.svg
+  description: Set timers, alarms, and timeline reminders with ease.
+
+- title: Currency Converter
+  icon: money.svg
+  description: Quickly convert between different currencies.
+
+- title: Calculator
+  icon: calculator.svg
+  description: Perform calculations directly on your Pebble.
+
+- title: Trivia
+  icon: trivia.svg
+  description: Get answers to trivia questions and expand your knowledge.
+
+- title: Weather
+  icon: weather.svg
+  description: Get up-to-date weather information.
+
+- title: Find Points of Interest
+  icon: poi.svg
+  description: Discover nearby places and points of interest.

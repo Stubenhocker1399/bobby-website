@@ -1,0 +1,60 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: home
+---
+
+<section class="features-section">
+    <div class="wrapper">
+        <h2>Key Features</h2>
+        <div class="feature-cards">
+        {% for feature in site.data.features %}
+            {% include components/feature-card.html
+                icon = feature.icon
+                title = feature.title
+                description = feature.description
+            %}
+        {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="how-it-works-section">
+    <div class="wrapper">
+        <h2>How It Works</h2>
+        <div class="how-it-works-content">
+            <div class="how-it-works-text-content">
+                <h3>Seamless Integration with Pebble</h3>
+                <p>
+                    Bobby seamlessly integrates with your Pebble Smartwatch, providing
+                    a natural and intuitive way to interact with your device.  It
+                    enhances your Pebble experience.
+                </p>
+                <ul>
+                    <li>Install the Bobby app from the Pebble app store.</li>
+                    <li>Connect Bobby to your phone.</li>
+                    <li>Start using voice commands and smart features on your Pebble.</li>
+                </ul>
+            </div>
+            <div class="pebble-frame dark">
+                <div class="pebble-watch dark">
+                    <div class="pebble-screen">
+                        <div class="text-center">
+                            <p style="font-size: 0.7rem; color: #d1d5db;">14:22</p>
+                            <p style="font-size: 0.9rem; font-weight: 600; color: white;">How can I help?</p>
+                            <p style="font-size: 0.7rem; color: #d1d5db;">"What's the weather?"</p>
+                            {/* Add more mock UI here */}
+                        </div>
+                    </div>
+                    <div class="pebble-buttons-left">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="pebble-button-right"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

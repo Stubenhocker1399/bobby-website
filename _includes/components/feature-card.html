@@ -1,0 +1,12 @@
+<div class="feature-card">
+    {% if include.icon %}
+    {% capture icon %}
+    {% include icons/{{ include.icon }} %}
+    {% endcapture %}
+    <div class="feature-card-icon">
+        {{ icon }}
+    </div>
+    {% endif %}
+    <h3>{{ include.title }}</h3>
+    <p>{{ include.description }}</p>
+</div>
