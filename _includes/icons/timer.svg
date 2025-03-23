@@ -1,3 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-    <path stroke-linecap="round" stroke-linejoin="round" d="M12 18.75a6 6 0 00-9-9 9 9 0 109-9 6 6 0 009 9m-9 2.25h.01m0 6h.01" />
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="25" height="25" version="1.1" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
+ <path d="m6 7v-5h13v5l-5 5 5 5v6h-13v-6l5-5z" fill="#fff" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+ <g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+  <path d="m3 1v23"/>
+  <path d="m22 1v23"/>
+  <path d="m1 2h23"/>
+  <path d="m1 23h23"/>
+  <path d="m8 23 4.5-4.5 4.5 4.5z"/>
+  <path d="m6 6h13v1l-6.5 6.5-6.5-6.5z"/>
+ </g>
+ <path d="m2 11h2l1 1v2l-1 1h-2l-1-1v-2z" fill="#fff" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+ <path d="m21 11h2l1 1v2l-1 1h-2l-1-1v-2z" fill="#fff" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
 </svg>
