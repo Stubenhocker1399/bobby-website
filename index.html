@@ -36,23 +36,23 @@ layout: home
                     <li>Start using voice commands and smart features on your Pebble.</li>
                 </ul>
             </div>
-            <div class="pebble-frame dark">
-                <div class="pebble-watch dark">
-                    <div class="pebble-screen">
-                        <div class="text-center">
-                            <p style="font-size: 0.7rem; color: #d1d5db;">14:22</p>
-                            <p style="font-size: 0.9rem; font-weight: 600; color: white;">How can I help?</p>
-                            <p style="font-size: 0.7rem; color: #d1d5db;">"What's the weather?"</p>
-                            {/* Add more mock UI here */}
-                        </div>
-                    </div>
-                    <div class="pebble-buttons-left">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                    <div class="pebble-button-right"></div>
+            <div class="pebbles-container">
+                {% capture screencontent %}
+                <div>
+                    <p style="font-size: 0.7rem; color: #d1d5db;">14:22</p>
+                    <p style="font-size: 0.9rem; font-weight: 600; color: white;">How can I help?</p>
+                    <p style="font-size: 0.7rem; color: #d1d5db;">"What's the weather?"</p>
+                    {/* Add more mock UI here */}
                 </div>
+                {% endcapture %}
+                {% include components/pebble-frame.html
+                    content = screencontent
+                    frame = "pebble-2"
+                %}
+                {% include components/pebble-frame.html
+                    content = screencontent
+                    frame = "pebble-time"
+                %}
             </div>
         </div>
     </div>
