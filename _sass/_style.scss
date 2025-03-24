@@ -15,7 +15,19 @@ body {
      margin: 0 auto;
      padding: 0 20px;
 }
- header {
+header {
+    .pebble-frame {
+        width: 270px;
+        max-width: 80vw;
+    }
+
+    .pebble-screen {
+        padding-top: 54.1%;
+        padding-bottom: 53.9%;
+        padding-left: 23.5%;
+        padding-right: 22.9%;
+    }
+
      padding-top: 80px !important;
      padding-bottom: 80px !important;
      background-color: #ffaaff;
@@ -117,16 +129,31 @@ body {
          padding-left: 2rem;
     }
 }
- .pebbles-container {
-     display: flex;
-     flex-flow: wrap;
-     justify-content: space-around;
+.pebbles-container {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+
+    .pebble-frame {
+        width: 270px;
+        max-width: 80vw;
+        @media (min-width: 910px) {
+            max-width: 50%;
+        }
+    }
+
+    .pebble-screen {
+        padding-top: 54.1%;
+        padding-bottom: 53.9%;
+        padding-left: 23.6%;
+        padding-right: 23.1%;
+    }
 }
  footer {
      padding: 3rem 0;
      text-align: center;
 }
- @media (min-width: 768px) {
+ @media (min-width: 910px) {
      header {
          text-align: left;
          h1{
