@@ -161,14 +161,19 @@ body {
   transform-origin: 44px 68px;
 }
 
-.home-screenshot:hover {
-  .eye-open {
-    display:none;
-  }
+.home-screenshot {
+    width: 101%;
+    height: 101%;
 
-  .eye-closed {
-    display:unset;
-  }
+    &:hover {
+        .eye-open {
+            display:none;
+        }
+
+        .eye-closed {
+            display:unset;
+        }
+    }
 }
 
 .pager {
