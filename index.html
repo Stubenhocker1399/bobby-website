@@ -25,8 +25,9 @@ layout: home
             <div class="section-text-content">
                 <h3>Built by Rebble</h3>
                 <p>
-                    Bobby works with the other features of your Rebble
-                    subscription like timeline for reminders.
+                    Bobby seamlessly integrates with other features of
+                    your Rebble subscription, such as the timeline for
+                    reminders, providing a great user experience.
                 </p>
             </div>
             <div class="pebbles-container">
@@ -52,20 +53,27 @@ layout: home
                     </div>
                 </div>
                 {% endcapture %}
+                {% capture pager-p2 %}
+                  {% include pager.html pages="p2" %}
+                {% endcapture %}
+                {% capture pager-pt %}
+                  {% include pager.html pages="pt" %}
+                {% endcapture %}
                 {% include components/pebble-frame.html
-                    content = screencontent
+                    content = pager-p2
                     frame = "pebble-2"
                 %}
                 {% include components/pebble-frame.html
-                    content = screencontent
+                    content = pager-pt
                     frame = "pebble-time"
                 %}
+                <script src="{{ '/assets/js/pager.js' | relative_url }}"></script>
             </div>
             <div class="section-text-content">
                 <h3>Quick and Easy to Use</h3>
                 <p>
                     Bobby enhances your Pebble smartwatch experience by
-                    enabling you to accomplish more tasks swiftly.
+                    enabling you to accomplish more tasks quickly.
                     Setting reminders, alarms, and timers becomes
                     effortless, and you can now access essential
                     information directly on your watch.
@@ -76,14 +84,18 @@ layout: home
             <div class="section-text-content">
                 <h3>Privacy Respecting</h3>
                 <p>
-                    Bobby doesn't store any data long term, and the
-                    content of your requests isn't used for further AI training.
+                    Bobby respects your privacy by not storing any data
+                    long-term. The content of your requests isn't used
+                    for further AI training, ensuring your information
+                    remains confidential.
                 </p>
             </div>
             <div class="section-text-content">
                 <h3>Open Source</h3>
                 <p>
-                    The Pebble app is fully open source and hosted on GitHub. 
+                    The app on the watch is fully open source and hosted
+                    on GitHub, allowing you and everyone else to
+                    contribute to its development and ensuring transparency of its operation.
                 </p>
             </div>
         </div>

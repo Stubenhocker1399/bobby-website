@@ -1,0 +1,10 @@
+p2:
+  - image: '/assets/pager/p2-1.png'
+  - image: '/assets/pager/p2-2.png'
+  - image: '/assets/pager/p2-3.png'
+  - image: '/assets/pager/p2-4.png'
+pt:
+  - image: '/assets/pager/pt-1.png'
+  - image: '/assets/pager/pt-2.png'
+  - image: '/assets/pager/pt-3.png'
+  - image: '/assets/pager/pt-4.png'

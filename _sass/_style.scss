@@ -160,3 +160,36 @@ body {
 .watch .arrows {
   transform-origin: 44px 68px;
 }
+
+.home-screenshot:hover {
+  .eye-open {
+    display:none;
+  }
+
+  .eye-closed {
+    display:unset;
+  }
+}
+
+.pager {
+  position: relative;
+  .page {
+    display: none;
+    width: 100%;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .open {
+    display: block;
+  }
+  .closing {
+    display: block;
+    position: absolute;
+    transform: translate(-110%) scaleX(1.1);
+    transition: transform 0.2s;
+    left: 0;
+    top: 0;
+  }
+}

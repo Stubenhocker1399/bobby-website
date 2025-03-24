@@ -1,0 +1,7 @@
+<div class="pager">
+  {% for page in site.data.pager[include.pages] %}
+    <div class="page {% if forloop.first %}open{% endif %}">
+      <img src="{{ page.image | relative_url }}"/>
+    </div>
+  {% endfor %}
+</div>
