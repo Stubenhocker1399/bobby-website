@@ -25,20 +25,20 @@ layout: home
             <div class="section-text-content">
                 <h3>Built by Rebble</h3>
                 <p>
-                    Bobby is added to your Rebble Subscription, extracting
-                    more value from what you already paid for. If you
-                    don't have a Rebble subscription yet, <a target="_blank" href="https://auth.rebble.io/account/">it's only $3 a month</a>.
+                    Bobby works with the other features of your Rebble
+                    subscription like timeline for reminders.
                 </p>
             </div>
             <div class="pebbles-container">
             {% include rebble_logo.svg %}
+            <script src="{{ '/assets/js/svg.js' | relative_url }}"></script>
             </div>
         </div>
         <div class="section-content">
             <div class="pebbles-container">
                 {% capture screencontent %}
                 <div>
-                    <p class="gothic-14 center status-bar-time">14:22</p>
+                    <p class="gothic-14 center status-bar-time current-time">14:22</p>
                     <div class="body">
                         <div class="container">
                             <p class="gothic-14 bold">Bobby</p>
@@ -92,12 +92,26 @@ layout: home
 
 <script>
 function updateTime() {
-    const timeDivs = document.getElementsByClassName('status-bar-time');
+    const timeDivs = document.getElementsByClassName('current-time');
+    const todDivs = document.getElementsByClassName('current-time-of-day');
     const options = { hour: '2-digit', minute: '2-digit' };
     const userLocale = navigator.language || 'en-US';
     const time = new Date().toLocaleTimeString(userLocale, options);
+    const hour = new Date().getHours();
     for (const timeDiv of timeDivs) {
         timeDiv.textContent = time;
+    }
+    for (const todDiv of todDivs) {
+        if (hour > 23)
+          todDiv.textContent = 'night'
+        else if (hour > 19)
+          todDiv.textContent = 'evening'
+        else if (hour > 13)
+          todDiv.textContent = 'afternoon'
+        else if (hour > 6)
+          todDiv.textContent = 'morning'
+        else
+          todDiv.textContent = 'night'
     }
 }
 

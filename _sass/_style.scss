@@ -1,171 +1,162 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&family=Oswald&family=Tektur:wght@700&family=Tomorrow:wght@400;500&display=swap');
 
 body {
-    font-family: 'Nunito', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #ffaaff;
-    min-height: 100vh;
-    color: #000000;
+     font-family: 'Nunito', sans-serif;
+     margin: 0;
+     padding: 0;
+     min-height: 100vh;
+     color: #000000;
 }
-
-*, :after, :before  {
-    box-sizing: border-box;
+ *, :after, :before {
+     box-sizing: border-box;
 }
-
-.wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+ .wrapper {
+     max-width: 1200px;
+     margin: 0 auto;
+     padding: 0 20px;
 }
-
-header {
-    padding-top: 80px !important;
-    padding-bottom: 80px !important;
-    text-align: center;
-    h1 {
-        font-family: 'Nunito', sans-serif;
-        font-size: 8rem;
-        font-weight: 1000;
-        margin: -1rem 0 -2rem;
+ header {
+     padding-top: 80px !important;
+     padding-bottom: 80px !important;
+     background-color: #ffaaff;
+     margin-bottom: 40px;
+     text-align: center;
+     h1 {
+         font-family: 'Nunito', sans-serif;
+         font-size: 8rem;
+         font-weight: 1000;
+         margin: -1rem 0 -1rem;
     }
-
-    .lead {
-        font-family: 'Tomorrow', sans-serif;
-        font-size: 2rem;
-        font-weight: 600;
+     .lead {
+         font-family: 'Tomorrow', sans-serif;
+         font-size: 2rem;
+         font-weight: 600;
     }
-
-    p {
-        margin: 0;
+     .description {
+         margin-top: 2rem;
+         font-size: 1.25rem;
     }
-
-    .header-block {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap-reverse;
-        div {
-            max-width: 100%;
+     p {
+         margin: 0;
+    }
+     .header-block {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         flex-wrap: wrap-reverse;
+         div {
+             max-width: 100%;
         }
-
-        svg {
-            width: 100%;
-            height: auto;
-            max-width: 400px;
-            margin: 0 auto;
+         .watch {
+             margin: 0 auto;
         }
     }
 }
-
-.button {
-    font-family: 'Tomorrow', sans-serif;
-    display: inline-block;
-    padding: 1rem 2rem;
-    background-color: #ff55ff;
-    color: white;
-    font-weight: bold;
-    border-radius: 100px;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-    &:hover {
-        transform: scale(1.05);
-        background-color: #ff00ff;
+ .button {
+     font-family: 'Tomorrow', sans-serif;
+     display: inline-block;
+     padding: 1rem 2rem;
+     background-color: black;
+     color: white;
+     font-weight: bold;
+     border-radius: 6.25rem;
+     text-decoration: none;
+     transition: all 0.3s ease;
+     font-size: 1.5rem;
+     margin-bottom: 0.5rem;
+     margin-top: 1rem;
+     &:hover {
+         transform: scale(1.2);
+         background-color: #ff00ff;
+    }
+}
+ .feature-cards {
+     display: grid;
+     grid-template-columns: 1fr;
+     gap: 2rem;
+     margin-bottom: 40px;
+}
+ @import "components/feature-card.scss";
+ @import "components/pebble-frame.scss";
+ @import "components/mockui/import.scss";
+ .status-bar-time {
+     text-align: center;
+     width: 100%;
+     border-bottom: #000000 1px dotted;
+     outline: #ffffff 1px solid;
+     position: sticky;
+     top: 0;
+     background-color: #ffffff;
+}
+ .section {
+     padding: 80px 0;
+     background-color: rgba(170,0,170, 0.1);
+     backdrop-filter: blur(10px);
+}
+ .section-content:not(:last-of-type) {
+     padding-bottom: 80px;
+}
+ .section-content {
+     display: grid;
+     grid-template-columns: 1fr;
+     gap: 2rem;
+     align-items: center;
+}
+ .section-text-content {
+     h3 {
+         font-family: 'Tomorrow', sans-serif;
+         font-size: 2rem;
+         font-weight: 600;
+         margin-bottom: 1.5rem;
+    }
+     p {
+         margin-bottom: 1rem;
+    }
+     ul {
+         list-style-type: disc;
+         padding-left: 2rem;
+    }
+}
+ .pebbles-container {
+     display: flex;
+     flex-flow: wrap;
+     justify-content: space-around;
+}
+ footer {
+     padding: 3rem 0;
+     text-align: center;
+}
+ @media (min-width: 768px) {
+     header {
+         text-align: left;
+         h1{
+             margin-left: 0;
+             font-size: 12rem;
+             margin: -3rem 0 -3rem;
+        }
+         p {
+             margin-left: 0.75rem;
+        }
+         .header-block {
+             flex-wrap: nowrap;
+             .watch {
+                 margin: 0;
+            }
+        }
+    }
+     .feature-cards {
+         grid-template-columns: repeat(2, 1fr);
+    }
+     .section-content {
+         grid-template-columns: repeat(2, 1fr);
+    }
+}
+ @media (min-width: 1024px) {
+     .feature-cards {
+         grid-template-columns: repeat(3, 1fr);
     }
 }
 
-.feature-cards {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    margin-bottom: 40px;
-}
-
-@import "components/feature-card.scss";
-@import "components/pebble-frame.scss";
-@import "components/mockui/import.scss";
-
-.status-bar-time {
-    text-align: center;
-    width: 100%;
-    border-bottom: #000000 1px dotted;
-    outline: #ffffff 1px solid;
-    position: sticky;
-    top: 0;
-    background-color: #ffffff;
-}
-
-.section {
-    padding: 80px 0;
-    background-color: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-} 
-
-.section-content:not(:last-of-type) {
-    padding-bottom: 80px;
-}
-
-.section-content {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    align-items: center;
-}
-
-.section-text-content {
-    h3 {
-        font-family: 'Tomorrow', sans-serif;
-        font-size: 2rem;
-        font-weight: 600;
-        margin-bottom: 1.5rem;
-    }
-    
-    p {
-        margin-bottom: 1rem;
-    }
-    
-    ul {
-        list-style-type: disc;
-        padding-left: 2rem;
-    }
-}
-
-.pebbles-container {
-    display: flex;
-    flex-flow: wrap;
-    justify-content: space-around;
-}
-
-footer {
-    padding: 3rem 0;
-    text-align: center;
-}
-
-@media (min-width: 768px) {
-    header {
-        text-align: left;
-    }
-    header h1{
-        margin-left: 0;
-        font-size: 12rem;
-        margin: -3rem 0 -4rem;
-    }
-    header p {
-        margin-left: 0.75rem;
-    }
-    .feature-cards {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .section-content {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (min-width: 1024px) {
-    .feature-cards {
-        grid-template-columns: repeat(3, 1fr);
-    }
+.watch .arrows {
+  transform-origin: 44px 68px;
 }

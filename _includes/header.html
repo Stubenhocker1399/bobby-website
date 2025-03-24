@@ -1,13 +1,23 @@
-<header class="wrapper">
+<header>
+    <div class="wrapper">
     <div class="header-block">
     <div>
-      <p class="lead">The most well-read pony on the platform</p>
+      <p class="lead">The tiny horse that knows it all</p>
       <h1>Bobby</h1>
       <p class="lead">Rebble AI Assistant</p>
-
+      <p class="description">Bobby is a new LLM voice assistant for Pebble Time, Pebble Time Steel, and Pebble 2, included with your Rebble subscription! Bobby can answer questions from Wikipedia, set timers and reminders on your watch, do math with a calculator, and more!</p>
       <a href="{{ site.store_url }}" class="button">Get Bobby</a>
       <p>Requires a Rebble Subscription</p>
     </div>
-    {% include big-bobby.svg %}
+    <div class="watch">
+        {% capture screencontent %}
+                {% include home_screenshot.svg %}
+                {% endcapture %}
+                {% include components/pebble-frame.html
+                    content = screencontent
+                    frame = "pebble-time"
+                %}
+    </div>
+    </div>
     </div>
 </header>
